@@ -3,7 +3,7 @@ The goal of objective quality assessment (QA) methods is to generate a score for
 
 (i.e. , if we beleive the quality of the image/video under test is fine, the algorithm must generate a higher score for that image/video. )
 
-(The definitons are not precise! more can be found here: https://ocampor.medium.com/advanced-methods-for-iqa-37581ec3c31f ;-) )
+(The definitons are not precise! more can be found here: https://ocampor.medium.com/advanced-methods-for-iqa-37581ec3c31f ;-) https://en.wikipedia.org/wiki/Structural_similarity )
 
 There are datasets of images/videos along with their human-rated scores. The objective algorithm generates a score for each sample. Then, the correlation between the objective and subjective scores is desired to be high.
 
