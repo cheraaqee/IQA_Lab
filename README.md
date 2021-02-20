@@ -1,5 +1,5 @@
 # IQA_Lab
-The goal of objective IQA methods is to generate a score for the input visual signal. This score must correlate with human perception of quality.
+The goal of objective quality assessment (QA) methods is to generate a score for the input visual signal. This score must correlate with human perception of quality.
 
 (i.e. , if we beleive the quality of the image/video under test is fine, the algorithm must generate a higher score for that image/video. )
 
