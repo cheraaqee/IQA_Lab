@@ -11,6 +11,11 @@ SVRs have two parameters, `cost' and 'gamma', which their values must be
 determined manually. The convention for optimizing these parameters and the 
 train procedure are adopted from [1].
 
+(current supported datasets:
+- MLIVE
+
+)
+
 [1] Xue, W., Mou, X., Zhang, L., Bovik, A. C., & Feng, X. (2014).
 Blind image quality assessment using joiont statistics of gradient magnitude and laplacian features.
 IEEE Transactions on Image Processing, 23(11), 4850-4862
