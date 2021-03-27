@@ -5,7 +5,7 @@ switch nargin
     case 2
         colorful = state;
 end
-mkdir(evaluator)
+mkdir(['./methods/', evaluator])
 load('./datasets/MDID2013/MDID_dmos.mat');
 objective_MDID13 = zeros(324, 5);%objective,mos,ref,dst,exe
 objective_MDID13(:, 2) = MDID_dmos;
