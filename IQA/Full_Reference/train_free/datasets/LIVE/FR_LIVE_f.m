@@ -5,7 +5,7 @@ switch nargin
     case 2
         colorful = state;
 end
-mkdir(evaluator)
+mkdir(['./methods/', evaluator])
 load('./datasets/LIVE/dmos_realigned.mat');
 load('./datasets/LIVE/refnames_all.mat');
 ref_list = importdata('./datasets/LIVE/ref_list.txt');
