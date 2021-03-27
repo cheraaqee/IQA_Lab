@@ -11,3 +11,5 @@ for Linux too.)
 A LaTeX file will be also generated, 'the_result.tex', it will produce the paper-style table for the methods and datasets. It is successfully compiled on https://overleaf.com .
 
 With `timer_2.m' you can plot the execution time VS accuracy for SCI datasets.
+
+There is also another option. You can plott `scatter plot' for SCID, SIQAD, and QACS. For that purpose refer to 'sctr_batch.m'
