@@ -5,7 +5,7 @@ switch nargin
     case 2
         colorful = state;
 end
-mkdir(evaluator)
+mkdir(['./methods/', evaluator])
 % addpath(genpath('E:\DATABASES\SIQAD_QoMex'));
 load('./datasets/SIQAD/DMOS_SIQAD');
 load('./datasets/SIQAD/subjective_SIQAD_dst_wise.mat');
