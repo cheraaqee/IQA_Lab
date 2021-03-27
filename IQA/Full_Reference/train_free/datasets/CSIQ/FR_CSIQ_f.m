@@ -5,7 +5,7 @@ switch nargin
     case 2
         colorful = state;
 end
-mkdir(evaluator)
+mkdir(['./methods/', evaluator])
 
 distortion_folders_list = importdata('./datasets/CSIQ/dst_imgs/Copy_of_distortion_folders_list.txt');
 distortion_columns_list = importdata('./datasets/CSIQ/dst_imgs/distortion_folders_list.txt');
