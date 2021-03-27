@@ -5,7 +5,7 @@ switch nargin
     case 2
         colorful = state;
 end
-mkdir(evaluator)
+mkdir(['./methods/', evaluator])
 load('./datasets/QACS/QACS_mos');
 in_QACS = 0;
 num = 492;
