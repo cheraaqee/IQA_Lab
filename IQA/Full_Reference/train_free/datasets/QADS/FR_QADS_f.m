@@ -5,7 +5,7 @@ switch nargin
     case 2
         colorful = state;
 end
-mkdir(evaluator)
+mkdir(['./methods/', evaluator])
 moses = importdata('./datasets/QADS/QADS/mos_with_names.txt');
 objective_QADS = zeros(980,3);
 for ii = 1:980
