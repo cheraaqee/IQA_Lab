@@ -5,7 +5,7 @@ switch nargin
     case 2
         colorful = state;
 end
-mkdir(evaluator)
+mkdir(['./methods/', evaluator])
 load('./datasets/TID2008/TID2008_data.mat');
 in_TID2008 = 0;
 objective_TID2008 = zeros(1700,5);
