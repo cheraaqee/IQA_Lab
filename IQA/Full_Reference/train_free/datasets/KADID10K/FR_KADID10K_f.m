@@ -6,7 +6,7 @@ switch nargin
         colorful = state;
 end
 %------------------------
-mkdir(evaluator)
+mkdir(['./methods/', evaluator])
 dmos = readmatrix('./datasets/KADID10K/dmos.csv');
 dmos = dmos(:, 3);
 objective_KADID10K = zeros(10125, 5);
