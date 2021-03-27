@@ -5,7 +5,7 @@ switch nargin
     case 2
         colorful = state;
 end
-mkdir(evaluator)
+mkdir(['./methods/', evaluator])
 mos = importdata('./datasets/MDID/mos.txt');
 objective_MDID = zeros(1600,11);
 objective_MDID(:,2) = mos;
