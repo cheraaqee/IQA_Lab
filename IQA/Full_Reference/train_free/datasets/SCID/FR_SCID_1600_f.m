@@ -7,7 +7,7 @@ switch nargin
         colorful = state;
 end
 % addpath(genpath('E:\DATABASES\SCID'));
-% mkdir(evaluator)
+mkdir(['./methods/', evaluator])
 objective_SCID_1600 = zeros(1600, 6);
 load('./datasets/SCID/MOS_SCID.mat');
 in_SCID_1600 = 0;
