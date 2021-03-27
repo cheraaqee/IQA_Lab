@@ -5,7 +5,7 @@ switch nargin
     case 2
         colorful = state;
 end
-mkdir(evaluator)
+mkdir(['./methods/', evaluator])
 load('./datasets/MLIVE/Part 1/Imagelists.mat');
 load('./datasets/MLIVE/Part 1/Scores.mat');
 
