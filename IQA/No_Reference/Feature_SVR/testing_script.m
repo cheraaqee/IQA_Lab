@@ -91,7 +91,7 @@ for method_idx = 1:size(the_methods, 2)
         %
         % 1- 'indexer_DATASET(METHOD)'
         % with this call, it is assumed that you have ran the
-        % 'optimizer_DATASET' for this 'METHOD' and the functions attempts
+        % 'cazama_optimizer_DATASET' for this 'METHOD' and the functions attempts
         % to retrieve the optimum value for C&G. It then computes the
         % SROCC, PLCC, RMSE, and KROCC indexes with 1000, 80-20 splits.
         %
