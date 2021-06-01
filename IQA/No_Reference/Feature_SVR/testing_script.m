@@ -34,7 +34,7 @@ the_methods = {'lin_man_cher', 'Grad_LOG_CP_TIP', 'gwhglbp_feature';0,0,0};
 % feature extractor. If set to '0', the image is assured to be a 2-D matrix of
 % graylevel values.
 datasets = {'MLIVE'}; % list the datasets here.
-cost_range = [7,1,8]; % by defult these will the power's of 2 the suggested
+cost_range = [7,1,8]; % by defult these will be the power's of 2 .The suggested
 % range to begin with is : 2^3-2^15 for cost and 2^(-15)-2^(3) for gamma.
 % The granularity of the search depends on your computing power.
 % by setting:
@@ -79,7 +79,7 @@ for method_idx = 1:size(the_methods, 2)
         % 'cazama_optimizer_DATASET(method, cost_range, gamma_range,
         % is_power_of_two)'
         % ! It must be noted that the FIRST time you are trying to
-        % optimized C&G for a method on a dataset, the function stores that
+        % optimize C&G for a method on a dataset, the function stores that
         % value. If you try different ranges for improving the parameters,
         % the function checks whether there has been any improvements and
         % in that case, replaces the optimum parameters for that method on
