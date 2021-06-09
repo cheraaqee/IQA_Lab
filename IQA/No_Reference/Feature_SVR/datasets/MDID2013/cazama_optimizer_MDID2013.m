@@ -17,7 +17,7 @@ for j = 1:N
     rand_order = randperm(Ref_number);
     C(j, :) = rand_order(1: REF);
 end
-feactor_length = size(featrix_MDID2013, 2)-5;
+feactor_length = size(featrix_MDID2013, 2)-4;
 data = featrix_MDID2013(:, 1:feactor_length);
 label = featrix_MDID2013(:, feactor_length+1);
 if is_power_of_2
