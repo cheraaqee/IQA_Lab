@@ -26,6 +26,8 @@ table{1,2} = 'Index';
 table{1,3} = 'Distortion';
 table(4:length(md_list)+3) = md_list;
 % LaTeX
+% latable{end+1, 1} = '% the generated table maybe much larger or smaller than the size of this document. Adjust the parameters below to take care of it.';
+% latable{end+1, 1} = '%\usepackage[left=10px,right=10px,top=10px,bottom=10px,paperwidth=8in,paperheight=20in]{geometry}';
 latable{end+1, 1} = '\begin{table}';
 latable{end+1, 1} = '\scriptsize';
 latable{end+1, 1} = '\caption{Entire Results}';
@@ -291,6 +293,8 @@ end
 latable{end+1,1} = '\end{tabular}';
 latable{end+1,1} = '\end{table}';
 latable{end+1,1} = '\end{document}';
+latable{end+1, 1} = '% the generated table maybe much larger or smaller than the size of this document. Adjust the parameters below to take care of it.';
+latable{end+1, 1} = '%\usepackage[left=10px,right=10px,top=10px,bottom=10px,paperwidth=8in,paperheight=20in]{geometry}';
 save([table_name,'.mat'], 'table');
 input.data = table;
 try

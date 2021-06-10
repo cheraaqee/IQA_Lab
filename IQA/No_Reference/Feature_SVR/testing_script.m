@@ -24,16 +24,17 @@
 % and test it on the entire images of another dataset.
 clear
 clc
+close all
 addpath(genpath('./datasets'));
 addpath(genpath('./methods'));
-the_methods = {'lin_man_cher', 'Grad_LOG_CP_TIP', 'gwhglbp_feature';0,0,0};
+the_methods = {'Grad_LOG_CP_TIP', 'gwhglbp_feature';0,0};
 % so as you see, the variable 'the_methods', is 2xM cell, where 'M' is the
 % number of methods that you want to compare.
 % the second row determines whether the method in the column operates on
 % RGB images or not. If it is set to '1', an RGB image will be fed to the
 % feature extractor. If set to '0', the image is assured to be a 2-D matrix of
 % graylevel values.
-datasets = {'MLIVE'}; % list the datasets here.
+datasets = {'MDID2013'}; % list the datasets here.
 cost_range = [7,1,8]; % by defult these will be the power's of 2 .The suggested
 % range to begin with is : 2^3-2^15 for cost and 2^(-15)-2^(3) for gamma.
 % The granularity of the search depends on your computing power.

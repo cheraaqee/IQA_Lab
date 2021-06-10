@@ -106,5 +106,6 @@ else
             'spear_median');
     end
 end
+close all
 end
 

@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage[margin=0.5cm, landscape, a3paper]{geometry}
+\usepackage{multirow}
+\usepackage[english]{babel}
+\usepackage{tabulary}
+\usepackage{colortbl}
+\usepackage{rotating}
+\usepackage{booktabs}
+\begin{document}
+\begin{table}
+\scriptsize
+\caption{Entire Results}
+\label{tbl:whole}
+\begin{tabular}{||l|l|l||cc||}
+\toprule
+\toprule
+\begin{turn}{-90}\textbf{Dataset}\end{turn}&\begin{turn}{-90}\textbf{Index}\end{turn}&\begin{turn}{-90}\textbf{Distortion}\end{turn}&\begin{turn}{-90}\textbf{Grad\_LOG}\end{turn}&\begin{turn}{-90}\textbf{gwhglbp\_feature}\end{turn}\\
+\midrule
+\midrule
+\multirow{4}{*}{\begin{turn}{-90}MDID2016\end{turn}}&\multirow{1}{*}{\begin{turn}{-90}SROCC\end{turn}}&ALL&\textbf{\textcolor{blue}{0.6872}}&\textbf{\textcolor{red}{0.8916}}\\
+\cmidrule{2-5}\cmidrule{2-5}
+&\multirow{1}{*}{\begin{turn}{-90}PLCC\end{turn}}&ALL&\textbf{\textcolor{blue}{0.7098}}&\textbf{\textcolor{red}{0.8970}}\\
+\cmidrule{2-5}\cmidrule{2-5}
+&\multirow{1}{*}{\begin{turn}{-90}RMSE\end{turn}}&ALL&\textbf{\textcolor{blue}{1.5501}}&\textbf{\textcolor{red}{0.9765}}\\
+\cmidrule{2-5}\cmidrule{2-5}
+&\multirow{1}{*}{\begin{turn}{-90}KROCC\end{turn}}&ALL&\textbf{\textcolor{blue}{0.4958}}&\textbf{\textcolor{red}{0.7063}}\\
+\midrule\midrule
+\multirow{3}{*}{\begin{turn}{-90}AVERAGE\end{turn}}&\multicolumn{2}{c||}{SROCC}&\textbf{\textcolor{blue}{0.6872}}&\textbf{\textcolor{red}{0.8916}}
+\\ \cmidrule{2-5}
+&\multicolumn{2}{c||}{PLCC}&\textbf{\textcolor{blue}{0.7098}}&\textbf{\textcolor{red}{0.8970}}
+\\ \cmidrule{2-5}
+&\multicolumn{2}{c||}{KROCC}&\textbf{\textcolor{blue}{0.4958}}&\textbf{\textcolor{red}{0.7063}}
+\\ \midrule \midrule
+\multirow{4}{*}{\begin{turn}{-90}HIT-COUNT\end{turn}}&\multicolumn{2}{c||}{SROCC}&\textbf{\textcolor{red}{1}}&\textbf{\textcolor{blue}{1}}
+\\ \cmidrule{2-5}
+&\multicolumn{2}{c||}{PLCC}&\textbf{\textcolor{red}{1}}&\textbf{\textcolor{blue}{1}}
+\\ \cmidrule{2-5}
+&\multicolumn{2}{c||}{RMSE}&\textbf{\textcolor{red}{1}}&\textbf{\textcolor{blue}{1}}
+\\ \cmidrule{2-5}
+&\multicolumn{2}{c||}{KROCC}&\textbf{\textcolor{red}{1}}&\textbf{\textcolor{blue}{1}}
+\\ \midrule \midrule
+\end{tabular}
+\end{table}
+\end{document}
+% the generated table maybe much larger or smaller than the size of this document. Adjust the parameters below to take care of it.
+%\usepackage[left=10px,right=10px,top=10px,bottom=10px,paperwidth=8in,paperheight=20in]{geometry}

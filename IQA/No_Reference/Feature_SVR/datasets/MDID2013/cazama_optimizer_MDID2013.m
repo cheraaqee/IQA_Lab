@@ -19,7 +19,7 @@ for j = 1:N
 end
 feactor_length = size(featrix_MDID2013, 2)-4;
 data = featrix_MDID2013(:, 1:feactor_length);
-label = featrix_MDID2013(:, feactor_length+1);
+label = 100*featrix_MDID2013(:, feactor_length+1);
 if is_power_of_2
     cost_power = cost_range(1):cost_range(2):cost_range(3);
     gamma_power = gamma_range(1):gamma_range(2):gamma_range(3);
@@ -127,5 +127,6 @@ catch
 end
 optimized_cost = cost_max(1, 1);
 optimized_gamma = gamma_max(1, 1);
+close all
 end
 

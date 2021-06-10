@@ -86,7 +86,7 @@ if ~only_srocc
     if nargin ~= 5
         save(['./methods/', feactorator, '/corr_MLIVE_', feactorator, '.mat'], ...
             'correlations');
-        save(['./methods/', feactorator, '/thousand_spears_MLIVE_', ...
+        save(['./methods/', feactorator, '/thousand_spears_MLIVE', ...
             '_', feactorator, '.mat'], 'spear_results');
     else
         save(['./methods/', feactorator, '/corr_MLIVE_', num2str(portion*100),...
@@ -106,5 +106,6 @@ else
             'spear_median');
     end
 end
+close all
 end
 
