@@ -27,7 +27,7 @@ clc
 close all
 addpath(genpath('./datasets'));
 addpath(genpath('./methods'));
-the_methods = {'Grad_LOG_CP_TIP', 'gwhglbp_feature';0,0};
+the_methods = {'proposed', 'Grad_LOG_CP_TIP', 'gwhglbp_feature';0,0, 0};
 % so as you see, the variable 'the_methods', is 2xM cell, where 'M' is the
 % number of methods that you want to compare.
 % the second row determines whether the method in the column operates on
@@ -53,8 +53,8 @@ for method_idx = 1:size(the_methods, 2)
     for dataset_idx = 1:size(datasets, 2)
         %% extracting the feature vectors
         
-        featrix = feval(['featrixator_', datasets{dataset_idx}], ...
-            the_methods{1, 	method_idx}, the_methods{2, method_idx});
+%         featrix = feval(['featrixator_', datasets{dataset_idx}], ...
+%             the_methods{1, 	method_idx}, the_methods{2, method_idx});
         
         % You should know that we are calling the function
         % 'featrixator_DATASET(feactorator, color_input)'
