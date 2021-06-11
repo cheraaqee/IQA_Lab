@@ -5,3 +5,6 @@
 /IQA/No_Reference/Feature_SVR/datasets/MLIVE/Part\ 2/
 /IQA/No_Reference/Feature_SVR/methods/*/cost_gamma_optimization/
 *.swp
+*FMX_*.mat
+*spear_*.mat
+*thousand_spears_*.mat
