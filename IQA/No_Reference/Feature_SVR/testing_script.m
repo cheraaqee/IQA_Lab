@@ -34,7 +34,7 @@ the_methods = {'proposed', 'Grad_LOG_CP_TIP', 'gwhglbp_feature';0,0, 0};
 % RGB images or not. If it is set to '1', an RGB image will be fed to the
 % feature extractor. If set to '0', the image is assured to be a 2-D matrix of
 % graylevel values.
-datasets = {'MDID2013'}; % list the datasets here.
+datasets = {'MLIVE', 'MDID2013', 'MDID2016'}; % list the datasets here.
 cost_range = [7,1,8]; % by defult these will be the power's of 2 .The suggested
 % range to begin with is : 2^3-2^15 for cost and 2^(-15)-2^(3) for gamma.
 % The granularity of the search depends on your computing power.
@@ -53,8 +53,8 @@ for method_idx = 1:size(the_methods, 2)
     for dataset_idx = 1:size(datasets, 2)
         %% extracting the feature vectors
         
-%         featrix = feval(['featrixator_', datasets{dataset_idx}], ...
-%             the_methods{1, 	method_idx}, the_methods{2, method_idx});
+        % featrix = feval(['featrixator_', datasets{dataset_idx}], ...
+        %      the_methods{1, 	method_idx}, the_methods{2, method_idx});
         
         % You should know that we are calling the function
         % 'featrixator_DATASET(feactorator, color_input)'
@@ -145,5 +145,5 @@ end
 %         end
 %     end
 % end
-tabler_v2_f(the_methods(1, :), datasets, 'experiment_1');
+% tabler_v2_f(the_methods(1, :), datasets, 'experiment_1');
 % box_plotter(the_methods(1, :), datasets, 'box_plotts_1')
