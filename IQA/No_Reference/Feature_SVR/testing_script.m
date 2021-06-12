@@ -53,8 +53,8 @@ for method_idx = 1:size(the_methods, 2)
     for dataset_idx = 1:size(datasets, 2)
         %% extracting the feature vectors
         
-        % featrix = feval(['featrixator_', datasets{dataset_idx}], ...
-        %      the_methods{1, 	method_idx}, the_methods{2, method_idx});
+        featrix = feval(['featrixator_', datasets{dataset_idx}], ...
+             the_methods{1, 	method_idx}, the_methods{2, method_idx});
         
         % You should know that we are calling the function
         % 'featrixator_DATASET(feactorator, color_input)'
@@ -130,20 +130,20 @@ end
 %% evaluating the generalization with cross_dataset train and test
 % Now that we're sure we have optimzied C&G for all (method, dataset)
 % pairs, we perform the cross-dataset test.
-% for method_idx = 1:size(the_methods, 2)
-%     for train_dataset_idx = 1:size(datasets, 2)
-%         for test_dataset_idx = 1:size(datasets, 2)
-%             if ~strcmp(datasets{train_dataset_idx}, datasets{test_dataset_idx})
-%                 load(['./methods/', the_methods{1, method_idx}, ...
-%                     '/optimized_cost_gamma_', ...
-%                     datasets{train_dataset_idx}, '.mat']);
-%                 feval(['cross_', datasets{train_dataset_idx}, ...
-%                     '_', datasets{test_dataset_idx}, '_f'], ...
-%                     the_methods{1, method_idx}, ...
-%                     optimized_cost_gamma(1,1), optimized_cost_gamma(1,2))
-%             end
-%         end
-%     end
-% end
-% tabler_v2_f(the_methods(1, :), datasets, 'experiment_1');
+for method_idx = 1:size(the_methods, 2)
+    for train_dataset_idx = 1:size(datasets, 2)
+        for test_dataset_idx = 1:size(datasets, 2)
+            if ~strcmp(datasets{train_dataset_idx}, datasets{test_dataset_idx})
+                load(['./methods/', the_methods{1, method_idx}, ...
+                    '/optimized_cost_gamma_', ...
+                    datasets{train_dataset_idx}, '.mat']);
+                feval(['cross_', datasets{train_dataset_idx}, ...
+                    '_', datasets{test_dataset_idx}, '_f'], ...
+                    the_methods{1, method_idx}, ...
+                    optimized_cost_gamma(1,1), optimized_cost_gamma(1,2))
+            end
+        end
+    end
+end
+tabler_v2_f(the_methods(1, :), datasets, 'experiment_1');
 % box_plotter(the_methods(1, :), datasets, 'box_plotts_1')

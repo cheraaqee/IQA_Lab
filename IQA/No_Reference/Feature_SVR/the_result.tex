@@ -11,33 +11,49 @@
 \scriptsize
 \caption{Entire Results}
 \label{tbl:whole}
-\begin{tabular}{||l|l|l||cc||}
+\begin{tabular}{||l|l|l||ccc||}
 \toprule
 \toprule
-\begin{turn}{-90}\textbf{Dataset}\end{turn}&\begin{turn}{-90}\textbf{Index}\end{turn}&\begin{turn}{-90}\textbf{Distortion}\end{turn}&\begin{turn}{-90}\textbf{Grad\_LOG}\end{turn}&\begin{turn}{-90}\textbf{gwhglbp\_feature}\end{turn}\\
+\begin{turn}{-90}\textbf{Dataset}\end{turn}&\begin{turn}{-90}\textbf{Index}\end{turn}&\begin{turn}{-90}\textbf{Distortion}\end{turn}&\begin{turn}{-90}\textbf{proposed}\end{turn}&\begin{turn}{-90}\textbf{Grad\_LOG}\end{turn}&\begin{turn}{-90}\textbf{gwhglbp\_feature}\end{turn}\\
 \midrule
 \midrule
-\multirow{4}{*}{\begin{turn}{-90}MDID2016\end{turn}}&\multirow{1}{*}{\begin{turn}{-90}SROCC\end{turn}}&ALL&\textbf{\textcolor{blue}{0.6872}}&\textbf{\textcolor{red}{0.8916}}\\
-\cmidrule{2-5}\cmidrule{2-5}
-&\multirow{1}{*}{\begin{turn}{-90}PLCC\end{turn}}&ALL&\textbf{\textcolor{blue}{0.7098}}&\textbf{\textcolor{red}{0.8970}}\\
-\cmidrule{2-5}\cmidrule{2-5}
-&\multirow{1}{*}{\begin{turn}{-90}RMSE\end{turn}}&ALL&\textbf{\textcolor{blue}{1.5501}}&\textbf{\textcolor{red}{0.9765}}\\
-\cmidrule{2-5}\cmidrule{2-5}
-&\multirow{1}{*}{\begin{turn}{-90}KROCC\end{turn}}&ALL&\textbf{\textcolor{blue}{0.4958}}&\textbf{\textcolor{red}{0.7063}}\\
+\multirow{4}{*}{\begin{turn}{-90}MLIVE\end{turn}}&\multirow{1}{*}{\begin{turn}{-90}SROCC\end{turn}}&ALL&\textbf{\textcolor{blue}{0.9338}}&\textbf{\textcolor{black}{0.7728}}&\textbf{\textcolor{red}{0.9345}}\\
+\cmidrule{2-6}\cmidrule{2-6}
+&\multirow{1}{*}{\begin{turn}{-90}PLCC\end{turn}}&ALL&\textbf{\textcolor{red}{0.9411}}&\textbf{\textcolor{black}{0.8030}}&\textbf{\textcolor{blue}{0.9373}}\\
+\cmidrule{2-6}\cmidrule{2-6}
+&\multirow{1}{*}{\begin{turn}{-90}RMSE\end{turn}}&ALL&\textbf{\textcolor{red}{6.2851}}&\textbf{\textcolor{black}{11.2284}}&\textbf{\textcolor{blue}{6.4262}}\\
+\cmidrule{2-6}\cmidrule{2-6}
+&\multirow{1}{*}{\begin{turn}{-90}KROCC\end{turn}}&ALL&\textbf{\textcolor{red}{0.7784}}&\textbf{\textcolor{black}{0.5988}}&\textbf{\textcolor{blue}{0.7766}}\\
 \midrule\midrule
-\multirow{3}{*}{\begin{turn}{-90}AVERAGE\end{turn}}&\multicolumn{2}{c||}{SROCC}&\textbf{\textcolor{blue}{0.6872}}&\textbf{\textcolor{red}{0.8916}}
-\\ \cmidrule{2-5}
-&\multicolumn{2}{c||}{PLCC}&\textbf{\textcolor{blue}{0.7098}}&\textbf{\textcolor{red}{0.8970}}
-\\ \cmidrule{2-5}
-&\multicolumn{2}{c||}{KROCC}&\textbf{\textcolor{blue}{0.4958}}&\textbf{\textcolor{red}{0.7063}}
+\multirow{4}{*}{\begin{turn}{-90}MDID2013\end{turn}}&\multirow{1}{*}{\begin{turn}{-90}SROCC\end{turn}}&ALL&\textbf{\textcolor{blue}{0.8976}}&\textbf{\textcolor{black}{0.7177}}&\textbf{\textcolor{red}{0.8981}}\\
+\cmidrule{2-6}\cmidrule{2-6}
+&\multirow{1}{*}{\begin{turn}{-90}PLCC\end{turn}}&ALL&\textbf{\textcolor{red}{0.9079}}&\textbf{\textcolor{black}{0.7321}}&\textbf{\textcolor{blue}{0.9004}}\\
+\cmidrule{2-6}\cmidrule{2-6}
+&\multirow{1}{*}{\begin{turn}{-90}RMSE\end{turn}}&ALL&\textbf{\textcolor{red}{2.0342}}&\textbf{\textcolor{black}{3.3342}}&\textbf{\textcolor{blue}{2.0976}}\\
+\cmidrule{2-6}\cmidrule{2-6}
+&\multirow{1}{*}{\begin{turn}{-90}KROCC\end{turn}}&ALL&\textbf{\textcolor{red}{0.7177}}&\textbf{\textcolor{black}{0.5332}}&\textbf{\textcolor{blue}{0.7135}}\\
+\midrule\midrule
+\multirow{4}{*}{\begin{turn}{-90}MDID2016\end{turn}}&\multirow{1}{*}{\begin{turn}{-90}SROCC\end{turn}}&ALL&\textbf{\textcolor{red}{0.9034}}&\textbf{\textcolor{black}{0.6831}}&\textbf{\textcolor{blue}{0.8904}}\\
+\cmidrule{2-6}\cmidrule{2-6}
+&\multirow{1}{*}{\begin{turn}{-90}PLCC\end{turn}}&ALL&\textbf{\textcolor{red}{0.9079}}&\textbf{\textcolor{black}{0.7079}}&\textbf{\textcolor{blue}{0.8966}}\\
+\cmidrule{2-6}\cmidrule{2-6}
+&\multirow{1}{*}{\begin{turn}{-90}RMSE\end{turn}}&ALL&\textbf{\textcolor{red}{0.9206}}&\textbf{\textcolor{black}{1.5552}}&\textbf{\textcolor{blue}{0.9794}}\\
+\cmidrule{2-6}\cmidrule{2-6}
+&\multirow{1}{*}{\begin{turn}{-90}KROCC\end{turn}}&ALL&\textbf{\textcolor{red}{0.7248}}&\textbf{\textcolor{black}{0.4934}}&\textbf{\textcolor{blue}{0.7059}}\\
+\midrule\midrule
+\multirow{3}{*}{\begin{turn}{-90}AVERAGE\end{turn}}&\multicolumn{2}{c||}{SROCC}&\textbf{\textcolor{red}{0.9083}}&\textbf{\textcolor{black}{0.7048}}&\textbf{\textcolor{blue}{0.8998}}
+\\ \cmidrule{2-6}
+&\multicolumn{2}{c||}{PLCC}&\textbf{\textcolor{red}{0.9142}}&\textbf{\textcolor{black}{0.7292}}&\textbf{\textcolor{blue}{0.9049}}
+\\ \cmidrule{2-6}
+&\multicolumn{2}{c||}{KROCC}&\textbf{\textcolor{red}{0.7340}}&\textbf{\textcolor{black}{0.5188}}&\textbf{\textcolor{blue}{0.7203}}
 \\ \midrule \midrule
-\multirow{4}{*}{\begin{turn}{-90}HIT-COUNT\end{turn}}&\multicolumn{2}{c||}{SROCC}&\textbf{\textcolor{red}{1}}&\textbf{\textcolor{blue}{1}}
-\\ \cmidrule{2-5}
-&\multicolumn{2}{c||}{PLCC}&\textbf{\textcolor{red}{1}}&\textbf{\textcolor{blue}{1}}
-\\ \cmidrule{2-5}
-&\multicolumn{2}{c||}{RMSE}&\textbf{\textcolor{red}{1}}&\textbf{\textcolor{blue}{1}}
-\\ \cmidrule{2-5}
-&\multicolumn{2}{c||}{KROCC}&\textbf{\textcolor{red}{1}}&\textbf{\textcolor{blue}{1}}
+\multirow{4}{*}{\begin{turn}{-90}HIT-COUNT\end{turn}}&\multicolumn{2}{c||}{SROCC}&\textbf{\textcolor{red}{3}}&\textbf{\textcolor{blue}{3}}&\textbf{\textcolor{black}{3}}
+\\ \cmidrule{2-6}
+&\multicolumn{2}{c||}{PLCC}&\textbf{\textcolor{red}{3}}&\textbf{\textcolor{blue}{3}}&\textbf{\textcolor{black}{3}}
+\\ \cmidrule{2-6}
+&\multicolumn{2}{c||}{RMSE}&\textbf{\textcolor{red}{3}}&\textbf{\textcolor{blue}{3}}&\textbf{\textcolor{black}{3}}
+\\ \cmidrule{2-6}
+&\multicolumn{2}{c||}{KROCC}&\textbf{\textcolor{red}{3}}&\textbf{\textcolor{blue}{3}}&\textbf{\textcolor{black}{3}}
 \\ \midrule \midrule
 \end{tabular}
 \end{table}

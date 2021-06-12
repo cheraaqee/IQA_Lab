@@ -37,7 +37,7 @@ for j=1:N
 end
 feactor_length = size(featrix_MDID2013, 2)-4;
 data = featrix_MDID2013(:, 1:feactor_length);
-label = featrix_MDID2013(:, feactor_length+1);
+label = 100*featrix_MDID2013(:, feactor_length+1);
 c_str = sprintf('%f', cost_max);
 g_str = sprintf('%.2f', gamma_max);
 % libsvm_optoins = ['-s 3 -5 2 -g ', g_str, ' -c ', c_str];

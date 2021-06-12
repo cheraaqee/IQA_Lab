@@ -42,10 +42,10 @@ for i = 1:N
     
     model = svmtrain(label_train,data_train,libsvm_options);
     [predict_score, ~, ~] = svmpredict(label_test, data_test, model);
-    spear_results(i) = corr(predict_score, label(test), 'type', 'Spearman');
-    kendall_results(i) = corr(predict_score, label(test), 'type', ...
+    spear_results(i) = corr(predict_score, label_test, 'type', 'Spearman');
+    kendall_results(i) = corr(predict_score, label_test, 'type', ...
             'Kendall');
-    [PLCC(i) RMSE(i)] = PearsonLC(predict_score, label(test));
+    [PLCC(i) RMSE(i)] = PearsonLC(predict_score, label_test);
 end
 spear_median = median(spear_results);
 PLCC_median = median(PLCC);
