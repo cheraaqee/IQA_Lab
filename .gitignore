@@ -20,9 +20,9 @@
 /IQA/Full_Reference/train_free/datasets/LIVE/wn/
 /IQA/Full_Reference/train_free/datasets/QACS/HEVC420/
 /IQA/Full_Reference/train_free/datasets/QACS/ORG/
-/IQA/Full_Reference/train_free/datasets/SCC444/
+/IQA/Full_Reference/train_free/datasets/QACS/SCC444/
 /IQA/Full_Reference/train_free/datasets/QADS/QADS/source_images/
-/IQA/Full_Reference/train_free/datasets/QADS/QADS/super_resolved_images/
+/IQA/Full_Reference/train_free/datasets/QADS/QADS/super-resolved_images/
 /IQA/Full_Reference/train_free/datasets/SCID/DistortedSCIs/
 /IQA/Full_Reference/train_free/datasets/SCID/ReferenceSCIs/
 /IQA/Full_Reference/train_free/datasets/SIQAD/DistortedImages/
