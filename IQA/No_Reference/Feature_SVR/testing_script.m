@@ -28,7 +28,7 @@ close all
 addpath(genpath('./datasets'));
 addpath(genpath('./methods'));
 % the_methods = {'proposed_yx', 'Grad_LOG_CP_TIP', 'gwhglbp_feature';0,0, 0};
-the_methods = {'Grad_LOG_CP_TIP', 'proposed', 'gwhglbp_feature','proposed_feature_jet';0,0,0,1}
+the_methods = {'GM_LoG', 'proposed', 'GWH_GLBP','JetLBP';0,0,0,1}
 % so as you see, the variable 'the_methods', is 2xM cell, where 'M' is the
 % number of methods that you want to compare.
 % the second row determines whether the method in the column operates on
@@ -54,8 +54,8 @@ for method_idx = 1:size(the_methods, 2)
     for dataset_idx = 1:size(datasets, 2)
         %% extracting the feature vectors
 
-        featrix = feval(['featrixator_', datasets{dataset_idx}], ...
-             the_methods{1, 	method_idx}, the_methods{2, method_idx});
+        % featrix = feval(['featrixator_', datasets{dataset_idx}], ...
+             % the_methods{1, 	method_idx}, the_methods{2, method_idx});
         
         % You should know that we are calling the function
         % 'featrixator_DATASET(feactorator, color_input)'
@@ -88,7 +88,7 @@ for method_idx = 1:size(the_methods, 2)
         % that dataset.
         %% Computing the performance indexes
         correlations = feval(['indexer_', datasets{dataset_idx}],...
-            the_methods{1, 	method_idx}, optimized_cost, optimized_gamma);
+            the_methods{1,	method_idx}, optimized_cost, optimized_gamma);
         % There are a few options available for this function:
         %
         % 1- 'indexer_DATASET(METHOD)'
@@ -146,7 +146,8 @@ for method_idx = 1:size(the_methods, 2)
         end
     end
 end
-tabler_v2_f(the_methods(1, :), datasets, 'experiment_1');
-tabler_v3_f(the_methods(1, :), datasets); % This is for generality tabl
-tabler_v4_f(the_methods(1, :), datasets, portion*100) % for different portions
-box_plotter(the_methods(1, :), datasets)
+the_methos_2 = {'GM_LoG', 'FISBLIM', 'SISBLIM', 'Monogenic', 'GWH_GLBP', 'proposed', 'BOSS', 'JetLBP'};
+tabler_v2_f(the_methods_2, datasets, 'experiment_1');
+tabler_v3_f(the_methods_2, datasets); % This is for generality tabl
+tabler_v4_f(the_methods_2, datasets, portion*100) % for different portions
+box_plotter(the_methods_2, datasets)
