@@ -1,0 +1,78 @@
+\documentclass{article}
+\usepackage[margin=0.5cm, landscape, a3paper]{geometry}
+\usepackage{multirow}
+\usepackage[english]{babel}
+\usepackage{tabulary}
+\usepackage{colortbl}
+\usepackage{rotating}
+\usepackage{booktabs}
+\begin{document}
+\begin{table}
+\scriptsize
+\caption{Entire Results}
+\label{tbl:whole}
+\begin{tabular}{||l|l|l||ccc||}
+\toprule
+\toprule
+\begin{turn}{-90}\textbf{Dataset}\end{turn}&\begin{turn}{-90}\textbf{Index}\end{turn}&\begin{turn}{-90}\textbf{Distortion}\end{turn}&\begin{turn}{-90}\textbf{WS\_HV}\end{turn}&\begin{turn}{-90}\textbf{GMSD}\end{turn}&\begin{turn}{-90}\textbf{MD\_GD}\end{turn}\\
+\midrule
+\midrule
+\multirow{12}{*}{\begin{turn}{-90}MLIVE\end{turn}}&\multirow{3}{*}{\begin{turn}{-90}SROCC\end{turn}}&blur_jpeg&\textbf{\textcolor{black}{0.8376}}&\textbf{\textcolor{blue}{0.8470}}&\textbf{\textcolor{red}{0.8697}}\\
+\cmidrule{3-6}
+&&blur_noise&\textbf{\textcolor{blue}{0.8429}}&\textbf{\textcolor{black}{0.8366}}&\textbf{\textcolor{red}{0.8692}}\\
+\cmidrule{3-6}
+&&ALL&\textbf{\textcolor{black}{0.8408}}&\textbf{\textcolor{blue}{0.8448}}&\textbf{\textcolor{red}{0.8726}}\\
+\cmidrule{2-6}\cmidrule{2-6}
+&\multirow{3}{*}{\begin{turn}{-90}PLCC\end{turn}}&blur_jpeg&\textbf{\textcolor{black}{0.8742}}&\textbf{\textcolor{blue}{0.8947}}&\textbf{\textcolor{red}{0.9173}}\\
+\cmidrule{3-6}
+&&blur_noise&\textbf{\textcolor{black}{0.8516}}&\textbf{\textcolor{red}{0.8674}}&\textbf{\textcolor{blue}{0.8538}}\\
+\cmidrule{3-6}
+&&ALL&\textbf{\textcolor{blue}{0.8629}}&\textbf{\textcolor{red}{0.8808}}&\textbf{\textcolor{black}{0.8616}}\\
+\cmidrule{2-6}\cmidrule{2-6}
+&\multirow{3}{*}{\begin{turn}{-90}RMSE\end{turn}}&blur_jpeg&\textbf{\textcolor{black}{9.3034}}&\textbf{\textcolor{blue}{8.5598}}&\textbf{\textcolor{red}{7.6291}}\\
+\cmidrule{3-6}
+&&blur_noise&\textbf{\textcolor{black}{9.7788}}&\textbf{\textcolor{red}{9.2817}}&\textbf{\textcolor{blue}{9.7125}}\\
+\cmidrule{3-6}
+&&ALL&\textbf{\textcolor{blue}{9.5575}}&\textbf{\textcolor{red}{8.9533}}&\textbf{\textcolor{black}{9.5986}}\\
+\cmidrule{2-6}\cmidrule{2-6}
+&\multirow{3}{*}{\begin{turn}{-90}KROCC\end{turn}}&blur_jpeg&\textbf{\textcolor{black}{0.6415}}&\textbf{\textcolor{blue}{0.6559}}&\textbf{\textcolor{red}{0.6836}}\\
+\cmidrule{3-6}
+&&blur_noise&\textbf{\textcolor{blue}{0.6547}}&\textbf{\textcolor{black}{0.6405}}&\textbf{\textcolor{red}{0.6774}}\\
+\cmidrule{3-6}
+&&ALL&\textbf{\textcolor{black}{0.6517}}&\textbf{\textcolor{blue}{0.6548}}&\textbf{\textcolor{red}{0.6857}}\\
+\midrule\midrule
+\multirow{4}{*}{\begin{turn}{-90}MDID\end{turn}}&\multirow{1}{*}{\begin{turn}{-90}SROCC\end{turn}}&ALL&\textbf{\textcolor{black}{0.8262}}&\textbf{\textcolor{blue}{0.8613}}&\textbf{\textcolor{red}{0.8987}}\\
+\cmidrule{2-6}\cmidrule{2-6}
+&\multirow{1}{*}{\begin{turn}{-90}PLCC\end{turn}}&ALL&\textbf{\textcolor{black}{0.8423}}&\textbf{\textcolor{blue}{0.8543}}&\textbf{\textcolor{red}{0.9090}}\\
+\cmidrule{2-6}\cmidrule{2-6}
+&\multirow{1}{*}{\begin{turn}{-90}RMSE\end{turn}}&ALL&\textbf{\textcolor{black}{1.1876}}&\textbf{\textcolor{blue}{1.1452}}&\textbf{\textcolor{red}{0.9186}}\\
+\cmidrule{2-6}\cmidrule{2-6}
+&\multirow{1}{*}{\begin{turn}{-90}KROCC\end{turn}}&ALL&\textbf{\textcolor{black}{0.6379}}&\textbf{\textcolor{blue}{0.6790}}&\textbf{\textcolor{red}{0.7222}}\\
+\midrule\midrule
+\multirow{4}{*}{\begin{turn}{-90}MDID2013\end{turn}}&\multirow{1}{*}{\begin{turn}{-90}SROCC\end{turn}}&ALL&\textbf{\textcolor{black}{0.4607}}&\textbf{\textcolor{blue}{0.8283}}&\textbf{\textcolor{red}{0.8599}}\\
+\cmidrule{2-6}\cmidrule{2-6}
+&\multirow{1}{*}{\begin{turn}{-90}PLCC\end{turn}}&ALL&\textbf{\textcolor{black}{0.5117}}&\textbf{\textcolor{blue}{0.8307}}&\textbf{\textcolor{red}{0.8512}}\\
+\cmidrule{2-6}\cmidrule{2-6}
+&\multirow{1}{*}{\begin{turn}{-90}RMSE\end{turn}}&ALL&\textbf{\textcolor{black}{0.0437}}&\textbf{\textcolor{blue}{0.0283}}&\textbf{\textcolor{red}{0.0267}}\\
+\cmidrule{2-6}\cmidrule{2-6}
+&\multirow{1}{*}{\begin{turn}{-90}KROCC\end{turn}}&ALL&\textbf{\textcolor{black}{0.3229}}&\textbf{\textcolor{blue}{0.6240}}&\textbf{\textcolor{red}{0.6632}}\\
+\midrule\midrule
+\multirow{3}{*}{\begin{turn}{-90}AVERAGE\end{turn}}&\multicolumn{2}{c||}{SROCC}&\textbf{\textcolor{black}{0.7791}}&\textbf{\textcolor{blue}{0.8537}}&\textbf{\textcolor{red}{0.8884}}
+\\ \cmidrule{2-6}
+&\multicolumn{2}{c||}{PLCC}&\textbf{\textcolor{black}{0.8011}}&\textbf{\textcolor{blue}{0.8561}}&\textbf{\textcolor{red}{0.8921}}
+\\ \cmidrule{2-6}
+&\multicolumn{2}{c||}{KROCC}&\textbf{\textcolor{black}{0.5975}}&\textbf{\textcolor{blue}{0.6669}}&\textbf{\textcolor{red}{0.7072}}
+\\ \midrule \midrule
+\multirow{4}{*}{\begin{turn}{-90}HIT-COUNT\end{turn}}&\multicolumn{2}{c||}{SROCC}&\textbf{\textcolor{red}{5}}&\textbf{\textcolor{blue}{5}}&\textbf{\textcolor{black}{5}}
+\\ \cmidrule{2-6}
+&\multicolumn{2}{c||}{PLCC}&\textbf{\textcolor{red}{5}}&\textbf{\textcolor{blue}{5}}&\textbf{\textcolor{black}{5}}
+\\ \cmidrule{2-6}
+&\multicolumn{2}{c||}{RMSE}&\textbf{\textcolor{red}{5}}&\textbf{\textcolor{blue}{5}}&\textbf{\textcolor{black}{5}}
+\\ \cmidrule{2-6}
+&\multicolumn{2}{c||}{KROCC}&\textbf{\textcolor{red}{5}}&\textbf{\textcolor{blue}{5}}&\textbf{\textcolor{black}{5}}
+\\ \midrule \midrule
+\end{tabular}
+\end{table}
+\end{document}
+% the generated table maybe much larger or smaller than the size of this document. Adjust the parameters below to take care of it.
+%\usepackage[left=10px,right=10px,top=10px,bottom=10px,paperwidth=8in,paperheight=20in]{geometry}

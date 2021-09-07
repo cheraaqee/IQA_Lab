@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage[margin=0.5cm, landscape, a3paper]{geometry}
+\usepackage{multirow}
+\usepackage[english]{babel}
+\usepackage{tabulary}
+\usepackage{colortbl}
+\usepackage{rotating}
+\usepackage{booktabs}
+\begin{document}
+\begin{table}
+\scriptsize
+\caption{Testing on Different Ratios for Train and Test}
+\label{tbl:portion}
+\begin{tabular}{||l|l||ccccc||}
+\toprule
+\toprule
+\begin{turn}{-90}\textbf{Dataset}\end{turn}&\begin{turn}{-90}\textbf{\% Train}\end{turn}&\begin{turn}{-90}\textbf{proposed}\end{turn}&\begin{turn}{-90}\textbf{proposed\_feature}\end{turn}&\begin{turn}{-90}\textbf{gwhglbp\_feature}\end{turn}&\begin{turn}{-90}\textbf{BOSS}\end{turn}&\begin{turn}{-90}\textbf{Grad\_LOG}\end{turn}\\
+\midrule
+\midrule
+\multirow{4}{*}{\begin{turn}{-90}MLIVE\end{turn}}&40&0.8919&\textcolor[rgb]{1,0,0}{\textbf{0.9285}}&\textbf{0.8953}&\textcolor[rgb]{0,0,1}{\textbf{0.9267}}&0.7329\\
+\cmidrule{2-7}
+&50&0.8988&\textcolor[rgb]{0,0,1}{\textbf{0.9365}}&\textbf{0.9056}&\textcolor[rgb]{1,0,0}{\textbf{0.9367}}&0.7473\\
+\cmidrule{2-7}
+&60&0.9081&\textcolor[rgb]{0,0,1}{\textbf{0.9390}}&\textbf{0.9144}&\textcolor[rgb]{1,0,0}{\textbf{0.9413}}&0.7505\\
+\cmidrule{2-7}
+&70&0.9244&\textcolor[rgb]{1,0,0}{\textbf{0.9450}}&\textbf{0.9253}&\textcolor[rgb]{0,0,1}{\textbf{0.9403}}&0.7681\\
+\midrule \midrule
+\multirow{4}{*}{\begin{turn}{-90}MDID2013\end{turn}}&40&\textcolor[rgb]{0,0,1}{\textbf{0.8449}}&0.7437&\textbf{0.7779}&\textcolor[rgb]{1,0,0}{\textbf{0.9088}}&0.5474\\
+\cmidrule{2-7}
+&50&\textcolor[rgb]{0,0,1}{\textbf{0.8489}}&0.7832&\textbf{0.7910}&\textcolor[rgb]{1,0,0}{\textbf{0.9236}}&0.5692\\
+\cmidrule{2-7}
+&60&\textcolor[rgb]{0,0,1}{\textbf{0.8607}}&0.8098&\textbf{0.8109}&\textcolor[rgb]{1,0,0}{\textbf{0.9298}}&0.5908\\
+\cmidrule{2-7}
+&70&\textcolor[rgb]{0,0,1}{\textbf{0.8695}}&\textbf{0.8371}&0.8351&\textcolor[rgb]{1,0,0}{\textbf{0.9337}}&0.6292\\
+\midrule \midrule
+\multirow{4}{*}{\begin{turn}{-90}MDID2016\end{turn}}&40&\textcolor[rgb]{0,0,1}{\textbf{0.8692}}&0.7814&\textbf{0.8397}&\textcolor[rgb]{1,0,0}{\textbf{0.8771}}&0.6497\\
+\cmidrule{2-7}
+&50&\textcolor[rgb]{0,0,1}{\textbf{0.8786}}&0.7983&\textbf{0.8603}&\textcolor[rgb]{1,0,0}{\textbf{0.8801}}&0.6596\\
+\cmidrule{2-7}
+&60&\textcolor[rgb]{1,0,0}{\textbf{0.8898}}&0.8118&\textbf{0.8742}&\textcolor[rgb]{0,0,1}{\textbf{0.8836}}&0.6659\\
+\cmidrule{2-7}
+&70&\textcolor[rgb]{1,0,0}{\textbf{0.8964}}&0.8263&\textbf{0.8825}&\textcolor[rgb]{0,0,1}{\textbf{0.8932}}&0.6742\\
+\midrule \midrule
+\end{tabular}
+\end{table}
+\end{document}
+% the generated table maybe much larger or smaller than the size of this document. Adjust the parameters below to take care of it.
+%\usepackage[left=10px,right=10px,top=10px,bottom=10px,paperwidth=8in,paperheight=20in]{geometry}
