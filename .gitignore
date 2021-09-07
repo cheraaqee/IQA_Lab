@@ -1,0 +1,16 @@
+/IQA/No_Reference/Feature_SVR/datasets/MDID2013/MDID2013/
+/IQA/No_Reference/Feature_SVR/datasets/MDID2016/distortion_images/
+/IQA/No_Reference/Feature_SVR/datasets/MDID2016/reference_images/
+/IQA/No_Reference/Feature_SVR/datasets/MLIVE/Part\ 1/
+/IQA/No_Reference/Feature_SVR/datasets/MLIVE/Part\ 2/
+/IQA/No_Reference/Feature_SVR/methods/*/cost_gamma_optimization/
+/IQA/Full_Reference/train_free/datasets/MLIVE/Part\ 1/
+/IQA/Full_Reference/train_free/datasets/MLIVE/Part\ 2/
+/IQA/Full_Reference/train_free/datasets/MDID/distortion_images/
+/IQA/Full_Reference/train_free/datasets/MDID/reference_images/
+/IQA/Full_Reference/train_free/datasets/MDID2013/MDID2013/
+*.swp
+*spear_*.mat
+*thousand_spears_*.mat
+*.aux
+*.log
