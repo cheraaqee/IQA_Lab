@@ -11,35 +11,35 @@
 \scriptsize
 \caption{Testing on Different Ratios for Train and Test}
 \label{tbl:portion}
-\begin{tabular}{||l|l||ccccc||}
+\begin{tabular}{||l|l||cccc||}
 \toprule
 \toprule
-\begin{turn}{-90}\textbf{Dataset}\end{turn}&\begin{turn}{-90}\textbf{\% Train}\end{turn}&\begin{turn}{-90}\textbf{proposed}\end{turn}&\begin{turn}{-90}\textbf{proposed\_feature}\end{turn}&\begin{turn}{-90}\textbf{gwhglbp\_feature}\end{turn}&\begin{turn}{-90}\textbf{BOSS}\end{turn}&\begin{turn}{-90}\textbf{Grad\_LOG}\end{turn}\\
+\begin{turn}{-90}\textbf{Dataset}\end{turn}&\begin{turn}{-90}\textbf{\% Train}\end{turn}&\begin{turn}{-90}\textbf{GM\_LoG}\end{turn}&\begin{turn}{-90}\textbf{GWH\_GLBP}\end{turn}&\begin{turn}{-90}\textbf{proposed}\end{turn}&\begin{turn}{-90}\textbf{JetLBP}\end{turn}\\
 \midrule
 \midrule
-\multirow{4}{*}{\begin{turn}{-90}MLIVE\end{turn}}&40&0.8919&\textcolor[rgb]{1,0,0}{\textbf{0.9285}}&\textbf{0.8953}&\textcolor[rgb]{0,0,1}{\textbf{0.9267}}&0.7329\\
-\cmidrule{2-7}
-&50&0.8988&\textcolor[rgb]{0,0,1}{\textbf{0.9365}}&\textbf{0.9056}&\textcolor[rgb]{1,0,0}{\textbf{0.9367}}&0.7473\\
-\cmidrule{2-7}
-&60&0.9081&\textcolor[rgb]{0,0,1}{\textbf{0.9390}}&\textbf{0.9144}&\textcolor[rgb]{1,0,0}{\textbf{0.9413}}&0.7505\\
-\cmidrule{2-7}
-&70&0.9244&\textcolor[rgb]{1,0,0}{\textbf{0.9450}}&\textbf{0.9253}&\textcolor[rgb]{0,0,1}{\textbf{0.9403}}&0.7681\\
+\multirow{4}{*}{\begin{turn}{-90}MLIVE\end{turn}}&40&0.7706&\textcolor[rgb]{0,0,1}{\textbf{0.9027}}&\textbf{0.8878}&\textcolor[rgb]{1,0,0}{\textbf{0.9269}}\\
+\cmidrule{2-6}
+&50&0.7869&\textcolor[rgb]{0,0,1}{\textbf{0.9149}}&\textbf{0.9038}&\textcolor[rgb]{1,0,0}{\textbf{0.9371}}\\
+\cmidrule{2-6}
+&60&0.7959&\textcolor[rgb]{0,0,1}{\textbf{0.9191}}&\textbf{0.9158}&\textcolor[rgb]{1,0,0}{\textbf{0.9392}}\\
+\cmidrule{2-6}
+&70&0.8190&\textbf{0.9286}&\textcolor[rgb]{0,0,1}{\textbf{0.9308}}&\textcolor[rgb]{1,0,0}{\textbf{0.9459}}\\
 \midrule \midrule
-\multirow{4}{*}{\begin{turn}{-90}MDID2013\end{turn}}&40&\textcolor[rgb]{0,0,1}{\textbf{0.8449}}&0.7437&\textbf{0.7779}&\textcolor[rgb]{1,0,0}{\textbf{0.9088}}&0.5474\\
-\cmidrule{2-7}
-&50&\textcolor[rgb]{0,0,1}{\textbf{0.8489}}&0.7832&\textbf{0.7910}&\textcolor[rgb]{1,0,0}{\textbf{0.9236}}&0.5692\\
-\cmidrule{2-7}
-&60&\textcolor[rgb]{0,0,1}{\textbf{0.8607}}&0.8098&\textbf{0.8109}&\textcolor[rgb]{1,0,0}{\textbf{0.9298}}&0.5908\\
-\cmidrule{2-7}
-&70&\textcolor[rgb]{0,0,1}{\textbf{0.8695}}&\textbf{0.8371}&0.8351&\textcolor[rgb]{1,0,0}{\textbf{0.9337}}&0.6292\\
+\multirow{4}{*}{\begin{turn}{-90}MDID2013\end{turn}}&40&0.6627&\textcolor[rgb]{0,0,1}{\textbf{0.7863}}&\textcolor[rgb]{1,0,0}{\textbf{0.8372}}&\textbf{0.7453}\\
+\cmidrule{2-6}
+&50&0.6752&\textcolor[rgb]{0,0,1}{\textbf{0.7966}}&\textcolor[rgb]{1,0,0}{\textbf{0.8481}}&\textbf{0.7645}\\
+\cmidrule{2-6}
+&60&0.6980&\textcolor[rgb]{0,0,1}{\textbf{0.8130}}&\textcolor[rgb]{1,0,0}{\textbf{0.8565}}&\textbf{0.8084}\\
+\cmidrule{2-6}
+&70&0.7172&\textcolor[rgb]{0,0,1}{\textbf{0.8391}}&\textcolor[rgb]{1,0,0}{\textbf{0.8652}}&\textbf{0.8385}\\
 \midrule \midrule
-\multirow{4}{*}{\begin{turn}{-90}MDID2016\end{turn}}&40&\textcolor[rgb]{0,0,1}{\textbf{0.8692}}&0.7814&\textbf{0.8397}&\textcolor[rgb]{1,0,0}{\textbf{0.8771}}&0.6497\\
-\cmidrule{2-7}
-&50&\textcolor[rgb]{0,0,1}{\textbf{0.8786}}&0.7983&\textbf{0.8603}&\textcolor[rgb]{1,0,0}{\textbf{0.8801}}&0.6596\\
-\cmidrule{2-7}
-&60&\textcolor[rgb]{1,0,0}{\textbf{0.8898}}&0.8118&\textbf{0.8742}&\textcolor[rgb]{0,0,1}{\textbf{0.8836}}&0.6659\\
-\cmidrule{2-7}
-&70&\textcolor[rgb]{1,0,0}{\textbf{0.8964}}&0.8263&\textbf{0.8825}&\textcolor[rgb]{0,0,1}{\textbf{0.8932}}&0.6742\\
+\multirow{4}{*}{\begin{turn}{-90}MDID2016\end{turn}}&40&0.6822&\textcolor[rgb]{0,0,1}{\textbf{0.8455}}&\textcolor[rgb]{1,0,0}{\textbf{0.8574}}&\textbf{0.8058}\\
+\cmidrule{2-6}
+&50&0.7051&\textcolor[rgb]{0,0,1}{\textbf{0.8606}}&\textcolor[rgb]{1,0,0}{\textbf{0.8681}}&\textbf{0.8179}\\
+\cmidrule{2-6}
+&60&0.7329&\textcolor[rgb]{0,0,1}{\textbf{0.8739}}&\textcolor[rgb]{1,0,0}{\textbf{0.8792}}&\textbf{0.8237}\\
+\cmidrule{2-6}
+&70&0.7546&\textcolor[rgb]{0,0,1}{\textbf{0.8826}}&\textcolor[rgb]{1,0,0}{\textbf{0.8883}}&\textbf{0.8332}\\
 \midrule \midrule
 \end{tabular}
 \end{table}
